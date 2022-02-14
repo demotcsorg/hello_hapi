@@ -1,0 +1,13 @@
+name: Hello Hapi
+on:
+  push:
+    branches:
+    - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: echo message
+      run: echo Hello World!
